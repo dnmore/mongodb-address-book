@@ -4,6 +4,16 @@
     <%- include('includes/head', { title: 'All Contacts'}) %>
   </head>
   <body>
-    <%- include('includes/navigation') %> <%- include('includes/footer') %>
+    <%- include('includes/navigation') %> <%- include('includes/footer') %> <%
+    if (!contacts || contacts.length === 0){ %>
+    <p>No contacts found, start creating some!</p>
+    <a href="/create-contact">Create Contact</a>
+    <% } else {%>
+    <div class="contacts__container">
+      <% for (const contact of contacts){ %> <%-
+      include('includes/contact__item', {contact: contact}) %> <% } %>
+    </div>
+
+    <% } %>
   </body>
 </html>

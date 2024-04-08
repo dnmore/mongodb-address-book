@@ -13,6 +13,18 @@ router.get("/new-contact", function (req, res) {
   res.render("new__contact");
 });
 
+router.post("/", async function (req, res) {
+  const newContact = {
+    name: req.body.name,
+    email: req.body.email,
+    phone: req.body.phone,
+  };
+
+  const result = await db.getDb().collection("contacts").insertOne(newContact);
+  console.log(result);
+  res.redirect("/");
+});
+
 router.get("/update-contact", function (req, res) {
   res.render("update__contact");
 });

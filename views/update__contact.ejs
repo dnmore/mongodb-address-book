@@ -6,18 +6,18 @@
 <body>
     <%- include('includes/navigation') %>
     <h2>Update Contact</h2>
-    <form>
+    <form action="/<%= contact._id %>/edit" method="post">
         <div class="form__item">
             <label for="name">Full Name</label>
-            <input type="text" name="name" id="name" required>
+            <input type="text" name="name" id="name" value="<%= contact.name %>">
         </div>
         <div class="form__item">
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" value="<%= contact.email %>">
         </div>
         <div class="form__item">
             <label for="phone">Telephone</label>
-            <input type="tel" name="phone" id="phone" >
+            <input type="tel" name="phone" id="phone" value="<%= contact.phone %>" >
         </div>
         <button>Update</button>
     </form>

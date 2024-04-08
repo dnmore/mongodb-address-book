@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('includes/head', { title: 'Update Contact'}) %>
+</head>
+<body>
+    <%- include('includes/navigation') %>
+    <h2>Update Contact</h2>
+    <form>
+        <div class="form__item">
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname" id="fullname" required>
+        </div>
+        <div class="form__item">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="form__item">
+            <label for="mobile">Telephone</label>
+            <input type="tel" name="telephone" id="telephone" >
+        </div>
+        <button>Update</button>
+    </form>
+
+    <%- include('includes/footer') %>

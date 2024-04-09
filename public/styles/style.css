@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --primary-1: #fff;
+  --primary-2: #111212;
+  --primary-3: #aeafb0;
+  --accent-1: #5356ff;
+  --accent-2: #ff204e;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--primary-2);
+  background-color: var(--primary-1);
+  text-align: center;
+  font-size: 0.8rem;
+  
+}
+
+header {
+  padding: 2% 0;
+  margin-bottom: 2rem;
+  color: var(--primary-1);
+  background-color: var(--accent-1);
+}
+
+h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--primary-3);
+  text-align: left;
+}
+
+input {
+  font: inherit;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--primary-3);
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: 1px solid var(--primary-3);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--primary-2);
+  color: var(--primary-1);
+}
+
+.container {
+  width: 100%;
+  padding: 0 10px;
+  margin: 1rem auto;
+}
+
+.nav__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid var(--accent-1);
+  border-radius: 8px;
+  color: var(--accent-1);
+  text-decoration: none;
+}
+
+.form__container {
+  max-width: 30rem;
+  margin: 2rem auto;
+  display: grid;
+}
+
+.form__container p {
+  color: var(--primary-3);
+  margin: 10px auto;
+}
+
+.form__container button {
+  cursor: pointer;
+  font: inherit;
+  background-color: var(--accent-1);
+  border: none;
+  color: var(--primary-1);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+.form__container button:hover {
+  opacity: 0.8;
+}
+
+.form__item {
+  margin: 1rem 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.delete {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.error__description {
+  margin: 2rem auto;
+}
+
+@media (min-width: 48rem) {
+  .contacts__container {
+    width: 80%;
+    margin: 1rem auto;
+  }
+}

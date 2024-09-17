@@ -1,48 +1,53 @@
-# Address Book
+# Address Book - Contact Management Application
 
-CRUD (Create, Read, Update, Delete) application built using Node.js, Express.js, EJS templating engine and MongoDB database.
+## Overview
+Address Book is a CRUD application for managing contacts. Users can create, read, update, and delete contact information stored in a MongoDB database.
 
 ## Features
 
-- Create, Read, Update and Delete Contacts
+- Add new contacts
+- View contact details
+- Edit existing contacts
+- Delete contacts
 
 
-## Stack
+## Tech Stack
 
-- `node.js` JavaScript runtime environment
-- `express.js` web framework for node.js
-- `EJS` embedded JavaScript templating
-- `mongodb` no-sql database
-- `nodemon` tool automatically restarting the node application when changes are detected
+- `Node.js` – Backend JavaScript runtime
+- `Express.js` – Web framework for Node.js
+- `EJS`– Templating engine for server-side rendering
+- `MongoDB`– NoSQL database for data storage
+- `Nodemon`– Automatically restarts the server on file changes
 
-## Database 
+## Database Setup
 
-Database named `address-book`, you can create it on Mongo Shell with the following command 
+Create a MongoDB database named `address-book`:
 
 ```
 use address-book
 
 ```
 
-## Cloning
-
-You can [clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) and install the dependencies with the following command
+## Getting Started
+### Installation
 
 ```
+$ git clone https://github.com/dnmore/mongodb-address-book.git
 $ npm install
 
 ```
-
-You can run the following command to start the application
+### Running the Application
+Start the server with:
 
 ```
 $ npm start
 
 ```
 
-The server will be running on port 3000, visit `http://localhost:3000/`
+Visit `http://localhost:3000/` to use the application.
 
 ## License
 
-MIT
+This project is licensed under the MIT License.
+
 
